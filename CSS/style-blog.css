@@ -1,0 +1,106 @@
+.blog-page {
+    background-color: #f5f5f5;
+
+    .blog-post {
+        background-color: #fff;
+        padding: 3rem;
+    }
+
+    .post-title {
+        ul {
+            border-left: 4px solid #0078ff;
+
+            i {
+                font-size: 14px;
+            }
+
+            a {
+                color: #0078ff;
+            }
+
+        }
+
+        blockquote {
+            border-left: 4px solid #0078ff;
+            padding: 18px;
+            font-style: italic;
+            font-size: 1.25rem;
+        }
+
+    }
+
+    .blog-comments {
+        background-color: #fff;
+
+    }
+
+    .comment-details a {
+        color: #0078ff;
+    }
+
+    .form-comment {
+        background-color: #fff;
+    }
+}
+
+.widget-side {
+    h5 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        border-left: 5px solid #0078ff;
+        padding-left: 15px;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
+
+    ul {
+        padding-left: 0;
+
+        li {
+            position: relative;
+            padding: 6px 0 6px 24px;
+        }
+    }
+
+    ul li::after {
+        position: absolute;
+        content: "";
+        width: 12px;
+        height: 1.7px;
+        left: 0;
+        background-color: #0078ff;
+        top: 20px;
+    }
+
+    ul li a {
+        color: #1e1e1e;
+        transition: all 0.4s ease-in-out;
+    }
+
+    ul li a:hover {
+        color: #0078ff;
+    }
+}
+
+@media (max-width:991px) {
+    .blog-page .blog-post {
+        padding: 1rem;
+    }
+
+    .post-title ul {
+        padding: 1rem;
+
+        li {
+            padding-right: 0.5rem !important;
+        }
+    }
+
+    .blog-comments {
+        padding: 1rem !important;
+    }
+
+    .form-comment {
+        padding: 1rem !important;
+
+    }
+}
